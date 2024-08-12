@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+<body class="bg-secondary-subtle">
+    <header>
+        <div class="container py-5">
+            <div class="d-flex row justify-content-end align-items-center">
+                <button class="btn btn-outline-light rounded-pill px-4 col-1 w-auto text-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-add" viewBox="0 0 16 16">
+                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h4a.5.5 0 1 0 0-1h-4a.5.5 0 0 1-.5-.5V7.207l5-5 6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+                        <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 1 0 1 0v-1h1a.5.5 0 1 0 0-1h-1v-1a.5.5 0 0 0-.5-.5"/>
+                      </svg>ثبت اقامتگاه
+                </button>
+                <a href="#" class="text-decoration-none text-light col-1">ورود/ ثبت نام</a>
+                <p class="col-1 w-auto pt-4 text-light">021-28111500<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
+                  <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5"/>
+                </svg></p>
+            </div>
+            <div class="first-topic pt-5">
+                <h2 class="text-light w-100 d-flex justify-content-center">
+                    اجاره ویلا و رزرو سوئیت در سراسر ایران
+                </h2>
+                <p class="text-secondary pt-4 w-100 d-flex justify-content-center">اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرارگیرد.
+                </p>
+            </div>
+            <div class="bg-light d-flex justify-content-between rounded-pill py-3 mt-5 w-100 mb-5">
+                <input class="w-25 ms-5 destination-input bg-light" type="text" placeholder="شهرمقصد . عنوان و یا شناسه اقامتگاه...">
+                <a class="text-decoration-none text-secondary border-start ps-3 pt-2" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar4-event" viewBox="0 0 16 16">
+                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+                        <path d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                        تاریخ شروع                      
+                </a>
+                <a class="text-decoration-none text-secondary border-start ps-3 pt-2" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar4-range" viewBox="0 0 16 16">
+                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+                        <path d="M9 7.5a.5.5 0 0 1 .5-.5H15v2H9.5a.5.5 0 0 1-.5-.5zm-2 3v1a.5.5 0 0 1-.5.5H1v-2h5.5a.5.5 0 0 1 .5.5"/>
+                      </svg>
+                        تاریخ پایان                      
+                </a>
+                <p class="pt-2 border-start ps-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                        <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus-circle mx-3" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                      </svg>
+                      2
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dash-circle mx-3" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                      </svg>
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="50" fill="currentColor" class="bi bi-search text-light p-3 bg-success rounded-circle me-3" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+      <div class="p-5">
+        <h2 class="d-flex justify-content-center">رزرو ویلا و سوئیت در پربازدیدترین شهرها
+        </h2>
+        <h6 class="text-secondary d-flex justify-content-center">اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرارگیرد</h6>
+      </div>
+      <div class="row gy-4 py-5 justify-content-center">
+        <div class=" col-10 col-sm-6 col-lg-3">
+        <a href="#" class="masal text-decoration-none d-flex justify-content-center align-items-end text-light fs-4 pb-4 rounded-4">ماسال
+          <br>
+          اجاره ویلا در ماسال
+        </a>
+        </div>
+        <div  class=" col-10 col-sm-6 col-lg-3">
+        <a href="#" class="kish text-decoration-none d-flex justify-content-center align-items-end text-light fs-4 pb-4 rounded-4">
+          کیش<br>
+          اجاره ویلا در کیش
+        </a>
+        </div>
+        <div  class=" col-10 col-sm-6 col-lg-3">
+        <a href="#" class="kordan text-decoration-none d-flex justify-content-center align-items-end text-light fs-4 pb-4 rounded-4">
+          کردان<br>
+          اجاره ویلا در کردان
+        </a>
+        </div>
+        <div  class=" col-10 col-sm-6 col-lg-3">
+        <a href="#" class="esfahan text-decoration-none d-flex justify-content-center align-items-end text-light fs-4 pb-4 rounded-4">
+          اصفهان<br>
+         اجاره ویلا در اصفهان
+        </a>
+        </div>
+      </div>
+      <div class="row py-4">
+        <div class="col-12 gilan d-flex justify-content-center align-items-center rounded-4">
+          <p class="text-light fs-1">سفر به استان زیبای گیلان با ویلاچی</p>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between align-items-center py-5">
+        <p class="fs-2">محبوب ترین اقامتگاه ها</p>
+        <a href="#" class="text-decoration-none text-success fs-6">مشاهده بیشتر</a>
+      </div>
+
+      <div class="row gap-4 container justify-content-center">
+
+
+        <div class="card col-10 col-sm-6 col-lg-3 rounded-4 position-relative" style="width: 18rem; height: 27rem;">
+          <p class="position-absolute top-50 end-0 bg-success-subtle text-success fs-4 px-3 mt-3 me-3 rounded-4">5</p>
+          <img src="./img/card3.jpg" class="card-img-top rounded-top-5 pt-2 h-50" alt="photo">
+          <div class="card-body">
+            <h4 class="card-title fw-bold">هتل قصر مشهد</h4>
+            <p class="card-text text-secondary">مشهد</p>
+            <p class="card-text fs-5">هر شب از 1.500.000 تومان</p>
+            <div class="d-flex justify-content-around align-items-center bg-secondary-subtle pt-1 rounded-4 more-info-vila">
+              <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-house text-success" viewBox="0 0 16 16">
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+              </svg>
+              <p>هتل</p>
+              </div>
+              <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-suitcase text-success" viewBox="0 0 16 16">
+                <path d="M6 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 6 5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 10 5"/>
+                <path d="M6.5 0a.5.5 0 0 0-.5.5V3H5a2 2 0 0 0-2 2v8a2 2 0 0 0 1.031 1.75A1.003 1.003 0 0 0 5 16a1 1 0 0 0 1-1h4a1 1 0 1 0 1.969-.25A2 2 0 0 0 13 13V5a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-.5-.5zM9 3H7V1h2zm3 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+              </svg>
+              <p>2تخت</p>
+              </div>
+              <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-people text-success" viewBox="0 0 16 16">
+                <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+              </svg>
+              <p>2نفر</p>
+              </div>
+              <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-door-closed text-success" viewBox="0 0 16 16">
+                <path d="M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3zm1 13h8V2H4z"/>
+                <path d="M9 9a1 1 0 1 0 2 0 1 1 0 0 0-2 0"/>
+              </svg>
+              <p>1اتاق</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      <div class="card col-10 col-sm-6 col-lg-3 rounded-4" style="width: 18rem; height: 27rem;">
+        <p class="position-absolute top-50 end-0 bg-success-subtle text-success fs-4 px-3 mt-3 me-3 rounded-4">5</p>
+        <img src="./img/card3.jpg" class="card-img-top rounded-top-5 pt-2 h-50" alt="photo">
+        <div class="card-body">
+          <h4 class="card-title fw-bold">هتل قصر مشهد</h4>
+          <p class="card-text text-secondary">مشهد</p>
+          <p class="card-text fs-5">هر شب از 1.500.000 تومان</p>
+          <div class="d-flex justify-content-around align-items-center bg-secondary-subtle pt-1 rounded-4 more-info-vila">
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-house text-success" viewBox="0 0 16 16">
+              <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+            </svg>
+            <p>هتل</p>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-suitcase text-success" viewBox="0 0 16 16">
+              <path d="M6 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 6 5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 10 5"/>
+              <path d="M6.5 0a.5.5 0 0 0-.5.5V3H5a2 2 0 0 0-2 2v8a2 2 0 0 0 1.031 1.75A1.003 1.003 0 0 0 5 16a1 1 0 0 0 1-1h4a1 1 0 1 0 1.969-.25A2 2 0 0 0 13 13V5a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-.5-.5zM9 3H7V1h2zm3 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+            </svg>
+            <p>2تخت</p>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-people text-success" viewBox="0 0 16 16">
+              <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+            </svg>
+            <p>2نفر</p>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-door-closed text-success" viewBox="0 0 16 16">
+              <path d="M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3zm1 13h8V2H4z"/>
+              <path d="M9 9a1 1 0 1 0 2 0 1 1 0 0 0-2 0"/>
+            </svg>
+            <p>1اتاق</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="card col-10 col-sm-6 col-lg-3 rounded-4" style="width: 18rem; height: 27rem;">
+        <p class="position-absolute top-50 end-0 bg-success-subtle text-success fs-4 px-3 mt-3 me-3 rounded-4">5</p>
+        <img src="./img/card3.jpg" class="card-img-top rounded-top-5 pt-2 h-50" alt="photo">
+        <div class="card-body">
+          <h4 class="card-title fw-bold">هتل قصر مشهد</h4>
+          <p class="card-text text-secondary">مشهد</p>
+          <p class="card-text fs-5">هر شب از 1.500.000 تومان</p>
+          <div class="d-flex justify-content-around align-items-center bg-secondary-subtle pt-1 rounded-4 more-info-vila">
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-house text-success" viewBox="0 0 16 16">
+              <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+            </svg>
+            <p>هتل</p>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-suitcase text-success" viewBox="0 0 16 16">
+              <path d="M6 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 6 5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 10 5"/>
+              <path d="M6.5 0a.5.5 0 0 0-.5.5V3H5a2 2 0 0 0-2 2v8a2 2 0 0 0 1.031 1.75A1.003 1.003 0 0 0 5 16a1 1 0 0 0 1-1h4a1 1 0 1 0 1.969-.25A2 2 0 0 0 13 13V5a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-.5-.5zM9 3H7V1h2zm3 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+            </svg>
+            <p>2تخت</p>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-people text-success" viewBox="0 0 16 16">
+              <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+            </svg>
+            <p>2نفر</p>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-door-closed text-success" viewBox="0 0 16 16">
+              <path d="M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3zm1 13h8V2H4z"/>
+              <path d="M9 9a1 1 0 1 0 2 0 1 1 0 0 0-2 0"/>
+            </svg>
+            <p>1اتاق</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="card col-10 col-sm-6 col-lg-3 rounded-4" style="width: 18rem; height: 27rem;">
+        <p class="position-absolute top-50 end-0 bg-success-subtle text-success fs-4 px-3 mt-3 me-3 rounded-4">5</p>
+        <img src="./img/card3.jpg" class="card-img-top rounded-top-5 pt-2 h-50" alt="photo">
+        <div class="card-body">
+          <h4 class="card-title fw-bold">هتل قصر مشهد</h4>
+          <p class="card-text text-secondary">مشهد</p>
+          <p class="card-text fs-5">هر شب از 1.500.000 تومان</p>
+          <div class="d-flex justify-content-around align-items-center bg-secondary-subtle pt-1 rounded-4 more-info-vila">
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-house text-success" viewBox="0 0 16 16">
+              <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+            </svg>
+            <p>هتل</p>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-suitcase text-success" viewBox="0 0 16 16">
+              <path d="M6 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 6 5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 10 5"/>
+              <path d="M6.5 0a.5.5 0 0 0-.5.5V3H5a2 2 0 0 0-2 2v8a2 2 0 0 0 1.031 1.75A1.003 1.003 0 0 0 5 16a1 1 0 0 0 1-1h4a1 1 0 1 0 1.969-.25A2 2 0 0 0 13 13V5a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-.5-.5zM9 3H7V1h2zm3 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+            </svg>
+            <p>2تخت</p>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-people text-success" viewBox="0 0 16 16">
+              <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+            </svg>
+            <p>2نفر</p>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-door-closed text-success" viewBox="0 0 16 16">
+              <path d="M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3zm1 13h8V2H4z"/>
+              <path d="M9 9a1 1 0 1 0 2 0 1 1 0 0 0-2 0"/>
+            </svg>
+            <p>1اتاق</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="p-5">
+      <h2 class="d-flex justify-content-center">درباره ویلاچی
+      </h2>
+      <h6 class="text-secondary d-flex justify-content-center">اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرارگیرد</h6>
+      <div class="d-flex justify-content-around py-5 text-center">
+        <div>
+        <img src="./img/Screenshot (13).png" alt="#" class="shadow-sm">
+        <p class="pt-2">+5300 اقامتگاه فعال</p>
+        </div>
+        <div>
+          <img src="./img/Screenshot (12).png" alt="#" class="shadow-sm">
+          <p class="pt-2">+150 شهر و منطقه ایران</p>
+          </div>
+          <div>
+            <img src="./img/Screenshot (11).png" alt="#" class="shadow-sm">
+            <p class="pt-2">تمامی مجوز های لازم</p>
+            </div>
+            <div>
+              <img src="./img/rezayat.png" alt="#" class="shadow-sm">
+              <p class="pt-2">رضایتمندی مشتری</p>
+              </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between align-items-center py-2">
+      <p class="fs-2">محبوب ترین شهرها</p>
+      <a href="#" class="text-decoration-none text-success fs-6">مشاهده بیشتر</a>
+    </div>
+
+    
+    <div class="row gy-4 py-5 justify-content-center">
+      <div class=" col-10 col-sm-6 col-lg-3">
+      <a href="#" class="masal text-decoration-none d-flex justify-content-center align-items-end text-light fs-4 pb-4 rounded-4">ماسال
+        <br>
+        اجاره ویلا در ماسال
+      </a>
+      </div>
+      <div  class=" col-10 col-sm-6 col-lg-3">
+      <a href="#" class="kish text-decoration-none d-flex justify-content-center align-items-end text-light fs-4 pb-4 rounded-4">
+        کیش<br>
+        اجاره ویلا در کیش
+      </a>
+      </div>
+      <div  class=" col-10 col-sm-6 col-lg-3">
+      <a href="#" class="kordan text-decoration-none d-flex justify-content-center align-items-end text-light fs-4 pb-4 rounded-4">
+        کردان<br>
+        اجاره ویلا در کردان
+      </a>
+      </div>
+      <div  class=" col-10 col-sm-6 col-lg-3">
+      <a href="#" class="esfahan text-decoration-none d-flex justify-content-center align-items-end text-light fs-4 pb-4 rounded-4">
+        اصفهان<br>
+       اجاره ویلا در اصفهان
+      </a>
+      </div>
+    </div>
+
+   
+    </main>
+    <section class="py-5">
+     <div class="d-flex justify-content-between align-items-center py-5 bg-success container-fluid">
+        <div class="container">
+         <div class="row justify-content-between">
+              <div class="col-8">
+                <p class="fs-2 text-light">میزبان های مهمان نواز</p>
+                <p class="fs-5 text-light">میزبان هایی با بالاترین تعداد رزرو موفق</p>
+              </div>
+              <div class="col-3 d-flex flex-nowrap justify-content-end">
+                <a href="#" class="text-decoration-none text-light fs-6">مشاهده بیشتر</a>
+              </div>
+          </div>
+
+        </div>
+     </div>
+
+
+    </section>
+
+
+    
+
+    <section class="container py-4">
+
+      <div class="row gap-4 container justify-content-center">
+
+
+        <div class="card col-10 col-sm-6 col-lg-3 rounded-4 position-relative" style="width: 18rem; height: 27rem;">
+          <p class="position-absolute top-50 end-0 bg-success-subtle text-success fs-4 px-3 mt-3 me-3 rounded-4">5</p>
+          <img src="./img/card3.jpg" class="card-img-top rounded-top-5 pt-2 h-50" alt="photo">
+          <div class="card-body">
+            <h4 class="card-title fw-bold">هتل قصر مشهد</h4>
+            <p class="card-text text-secondary">مشهد</p>
+            <p class="card-text fs-5">هر شب از 1.500.000 تومان</p>
+            <div class="d-flex justify-content-around align-items-center bg-secondary-subtle pt-1 rounded-4 more-info-vila">
+              <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-house text-success" viewBox="0 0 16 16">
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+              </svg>
+              <p>هتل</p>
+              </div>
+              <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-suitcase text-success" viewBox="0 0 16 16">
+                <path d="M6 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 6 5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 10 5"/>
+                <path d="M6.5 0a.5.5 0 0 0-.5.5V3H5a2 2 0 0 0-2 2v8a2 2 0 0 0 1.031 1.75A1.003 1.003 0 0 0 5 16a1 1 0 0 0 1-1h4a1 1 0 1 0 1.969-.25A2 2 0 0 0 13 13V5a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-.5-.5zM9 3H7V1h2zm3 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+              </svg>
+              <p>2تخت</p>
+              </div>
+              <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-people text-success" viewBox="0 0 16 16">
+                <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+              </svg>
+              <p>2نفر</p>
+              </div>
+              <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-door-closed text-success" viewBox="0 0 16 16">
+                <path d="M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3zm1 13h8V2H4z"/>
+                <path d="M9 9a1 1 0 1 0 2 0 1 1 0 0 0-2 0"/>
+              </svg>
+              <p>1اتاق</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      <div class="card col-10 col-sm-6 col-lg-3 rounded-4" style="width: 18rem; height: 27rem;">
+        <p class="position-absolute top-50 end-0 bg-success-subtle text-success fs-4 px-3 mt-3 me-3 rounded-4">5</p>
+        <img src="./img/card3.jpg" class="card-img-top rounded-top-5 pt-2 h-50" alt="photo">
+        <div class="card-body">
+          <h4 class="card-title fw-bold">هتل قصر مشهد</h4>
+          <p class="card-text text-secondary">مشهد</p>
+          <p class="card-text fs-5">هر شب از 1.500.000 تومان</p>
+          <div class="d-flex justify-content-around align-items-center bg-secondary-subtle pt-1 rounded-4 more-info-vila">
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-house text-success" viewBox="0 0 16 16">
+              <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+            </svg>
+            <p>هتل</p>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-suitcase text-success" viewBox="0 0 16 16">
+              <path d="M6 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 6 5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 10 5"/>
+              <path d="M6.5 0a.5.5 0 0 0-.5.5V3H5a2 2 0 0 0-2 2v8a2 2 0 0 0 1.031 1.75A1.003 1.003 0 0 0 5 16a1 1 0 0 0 1-1h4a1 1 0 1 0 1.969-.25A2 2 0 0 0 13 13V5a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-.5-.5zM9 3H7V1h2zm3 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+            </svg>
+            <p>2تخت</p>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-people text-success" viewBox="0 0 16 16">
+              <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+            </svg>
+            <p>2نفر</p>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-door-closed text-success" viewBox="0 0 16 16">
+              <path d="M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3zm1 13h8V2H4z"/>
+              <path d="M9 9a1 1 0 1 0 2 0 1 1 0 0 0-2 0"/>
+            </svg>
+            <p>1اتاق</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="card col-10 col-sm-6 col-lg-3 rounded-4" style="width: 18rem; height: 27rem;">
+        <p class="position-absolute top-50 end-0 bg-success-subtle text-success fs-4 px-3 mt-3 me-3 rounded-4">5</p>
+        <img src="./img/card3.jpg" class="card-img-top rounded-top-5 pt-2 h-50" alt="photo">
+        <div class="card-body">
+          <h4 class="card-title fw-bold">هتل قصر مشهد</h4>
+          <p class="card-text text-secondary">مشهد</p>
+          <p class="card-text fs-5">هر شب از 1.500.000 تومان</p>
+          <div class="d-flex justify-content-around align-items-center bg-secondary-subtle pt-1 rounded-4 more-info-vila">
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-house text-success" viewBox="0 0 16 16">
+              <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+            </svg>
+            <p>هتل</p>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-suitcase text-success" viewBox="0 0 16 16">
+              <path d="M6 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 6 5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 10 5"/>
+              <path d="M6.5 0a.5.5 0 0 0-.5.5V3H5a2 2 0 0 0-2 2v8a2 2 0 0 0 1.031 1.75A1.003 1.003 0 0 0 5 16a1 1 0 0 0 1-1h4a1 1 0 1 0 1.969-.25A2 2 0 0 0 13 13V5a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-.5-.5zM9 3H7V1h2zm3 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+            </svg>
+            <p>2تخت</p>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-people text-success" viewBox="0 0 16 16">
+              <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+            </svg>
+            <p>2نفر</p>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-door-closed text-success" viewBox="0 0 16 16">
+              <path d="M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3zm1 13h8V2H4z"/>
+              <path d="M9 9a1 1 0 1 0 2 0 1 1 0 0 0-2 0"/>
+            </svg>
+            <p>1اتاق</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="card col-10 col-sm-6 col-lg-3 rounded-4" style="width: 18rem; height: 27rem;">
+        <p class="position-absolute top-50 end-0 bg-success-subtle text-success fs-4 px-3 mt-3 me-3 rounded-4">5</p>
+        <img src="./img/card3.jpg" class="card-img-top rounded-top-5 pt-2 h-50" alt="photo">
+        <div class="card-body">
+          <h4 class="card-title fw-bold">هتل قصر مشهد</h4>
+          <p class="card-text text-secondary">مشهد</p>
+          <p class="card-text fs-5">هر شب از 1.500.000 تومان</p>
+          <div class="d-flex justify-content-around align-items-center bg-secondary-subtle pt-1 rounded-4 more-info-vila">
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-house text-success" viewBox="0 0 16 16">
+              <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+            </svg>
+            <p>هتل</p>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-suitcase text-success" viewBox="0 0 16 16">
+              <path d="M6 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 6 5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 10 5"/>
+              <path d="M6.5 0a.5.5 0 0 0-.5.5V3H5a2 2 0 0 0-2 2v8a2 2 0 0 0 1.031 1.75A1.003 1.003 0 0 0 5 16a1 1 0 0 0 1-1h4a1 1 0 1 0 1.969-.25A2 2 0 0 0 13 13V5a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-.5-.5zM9 3H7V1h2zm3 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+            </svg>
+            <p>2تخت</p>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-people text-success" viewBox="0 0 16 16">
+              <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+            </svg>
+            <p>2نفر</p>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-door-closed text-success" viewBox="0 0 16 16">
+              <path d="M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3zm1 13h8V2H4z"/>
+              <path d="M9 9a1 1 0 1 0 2 0 1 1 0 0 0-2 0"/>
+            </svg>
+            <p>1اتاق</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    </section>
+
+    <section class="container py-4">
+
+
+      <div class="row py-4">
+        <div class="col-12 gilan d-flex justify-content-center align-items-center rounded-4">
+          <p class="text-light fs-1">سفر به استان زیبای گیلان با ویلاچی</p>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between align-items-center py-5">
+        <p class="fs-2">محبوب ترین اقامتگاه ها</p>
+        <a href="#" class="text-decoration-none text-success fs-6">مشاهده بیشتر</a>
+      </div>
+
+      <div class="row gap-4 container justify-content-center py-4">
+
+
+        <div class="card col-10 col-sm-6 col-lg-3 rounded-4 position-relative" style="width: 18rem; height: 27rem;">
+          <p class="position-absolute top-50 end-0 bg-success-subtle text-success fs-4 px-3 mt-3 me-3 rounded-4">5</p>
+          <img src="./img/card3.jpg" class="card-img-top rounded-top-5 pt-2 h-50" alt="photo">
+          <div class="card-body">
+            <h4 class="card-title fw-bold">هتل قصر مشهد</h4>
+            <p class="card-text text-secondary">مشهد</p>
+            <p class="card-text fs-5">هر شب از 1.500.000 تومان</p>
+            <div class="d-flex justify-content-around align-items-center bg-secondary-subtle pt-1 rounded-4 more-info-vila">
+              <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-house text-success" viewBox="0 0 16 16">
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+              </svg>
+              <p>هتل</p>
+              </div>
+              <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-suitcase text-success" viewBox="0 0 16 16">
+                <path d="M6 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 6 5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 10 5"/>
+                <path d="M6.5 0a.5.5 0 0 0-.5.5V3H5a2 2 0 0 0-2 2v8a2 2 0 0 0 1.031 1.75A1.003 1.003 0 0 0 5 16a1 1 0 0 0 1-1h4a1 1 0 1 0 1.969-.25A2 2 0 0 0 13 13V5a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-.5-.5zM9 3H7V1h2zm3 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+              </svg>
+              <p>2تخت</p>
+              </div>
+              <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-people text-success" viewBox="0 0 16 16">
+                <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+              </svg>
+              <p>2نفر</p>
+              </div>
+              <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-door-closed text-success" viewBox="0 0 16 16">
+                <path d="M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3zm1 13h8V2H4z"/>
+                <path d="M9 9a1 1 0 1 0 2 0 1 1 0 0 0-2 0"/>
+              </svg>
+              <p>1اتاق</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      <div class="card col-10 col-sm-6 col-lg-3 rounded-4" style="width: 18rem; height: 27rem;">
+        <p class="position-absolute top-50 end-0 bg-success-subtle text-success fs-4 px-3 mt-3 me-3 rounded-4">5</p>
+        <img src="./img/card3.jpg" class="card-img-top rounded-top-5 pt-2 h-50" alt="photo">
+        <div class="card-body">
+          <h4 class="card-title fw-bold">هتل قصر مشهد</h4>
+          <p class="card-text text-secondary">مشهد</p>
+          <p class="card-text fs-5">هر شب از 1.500.000 تومان</p>
+          <div class="d-flex justify-content-around align-items-center bg-secondary-subtle pt-1 rounded-4 more-info-vila">
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-house text-success" viewBox="0 0 16 16">
+              <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+            </svg>
+            <p>هتل</p>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-suitcase text-success" viewBox="0 0 16 16">
+              <path d="M6 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 6 5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 10 5"/>
+              <path d="M6.5 0a.5.5 0 0 0-.5.5V3H5a2 2 0 0 0-2 2v8a2 2 0 0 0 1.031 1.75A1.003 1.003 0 0 0 5 16a1 1 0 0 0 1-1h4a1 1 0 1 0 1.969-.25A2 2 0 0 0 13 13V5a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-.5-.5zM9 3H7V1h2zm3 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+            </svg>
+            <p>2تخت</p>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-people text-success" viewBox="0 0 16 16">
+              <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+            </svg>
+            <p>2نفر</p>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-door-closed text-success" viewBox="0 0 16 16">
+              <path d="M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3zm1 13h8V2H4z"/>
+              <path d="M9 9a1 1 0 1 0 2 0 1 1 0 0 0-2 0"/>
+            </svg>
+            <p>1اتاق</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="card col-10 col-sm-6 col-lg-3 rounded-4" style="width: 18rem; height: 27rem;">
+        <p class="position-absolute top-50 end-0 bg-success-subtle text-success fs-4 px-3 mt-3 me-3 rounded-4">5</p>
+        <img src="./img/card3.jpg" class="card-img-top rounded-top-5 pt-2 h-50" alt="photo">
+        <div class="card-body">
+          <h4 class="card-title fw-bold">هتل قصر مشهد</h4>
+          <p class="card-text text-secondary">مشهد</p>
+          <p class="card-text fs-5">هر شب از 1.500.000 تومان</p>
+          <div class="d-flex justify-content-around align-items-center bg-secondary-subtle pt-1 rounded-4 more-info-vila">
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-house text-success" viewBox="0 0 16 16">
+              <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+            </svg>
+            <p>هتل</p>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-suitcase text-success" viewBox="0 0 16 16">
+              <path d="M6 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 6 5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 10 5"/>
+              <path d="M6.5 0a.5.5 0 0 0-.5.5V3H5a2 2 0 0 0-2 2v8a2 2 0 0 0 1.031 1.75A1.003 1.003 0 0 0 5 16a1 1 0 0 0 1-1h4a1 1 0 1 0 1.969-.25A2 2 0 0 0 13 13V5a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-.5-.5zM9 3H7V1h2zm3 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+            </svg>
+            <p>2تخت</p>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-people text-success" viewBox="0 0 16 16">
+              <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+            </svg>
+            <p>2نفر</p>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-door-closed text-success" viewBox="0 0 16 16">
+              <path d="M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3zm1 13h8V2H4z"/>
+              <path d="M9 9a1 1 0 1 0 2 0 1 1 0 0 0-2 0"/>
+            </svg>
+            <p>1اتاق</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="card col-10 col-sm-6 col-lg-3 rounded-4" style="width: 18rem; height: 27rem;">
+        <p class="position-absolute top-50 end-0 bg-success-subtle text-success fs-4 px-3 mt-3 me-3 rounded-4">5</p>
+        <img src="./img/card3.jpg" class="card-img-top rounded-top-5 pt-2 h-50" alt="photo">
+        <div class="card-body">
+          <h4 class="card-title fw-bold">هتل قصر مشهد</h4>
+          <p class="card-text text-secondary">مشهد</p>
+          <p class="card-text fs-5">هر شب از 1.500.000 تومان</p>
+          <div class="d-flex justify-content-around align-items-center bg-secondary-subtle pt-1 rounded-4 more-info-vila">
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-house text-success" viewBox="0 0 16 16">
+              <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+            </svg>
+            <p>هتل</p>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-suitcase text-success" viewBox="0 0 16 16">
+              <path d="M6 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 6 5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 10 5"/>
+              <path d="M6.5 0a.5.5 0 0 0-.5.5V3H5a2 2 0 0 0-2 2v8a2 2 0 0 0 1.031 1.75A1.003 1.003 0 0 0 5 16a1 1 0 0 0 1-1h4a1 1 0 1 0 1.969-.25A2 2 0 0 0 13 13V5a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-.5-.5zM9 3H7V1h2zm3 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+            </svg>
+            <p>2تخت</p>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-people text-success" viewBox="0 0 16 16">
+              <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+            </svg>
+            <p>2نفر</p>
+            </div>
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-door-closed text-success" viewBox="0 0 16 16">
+              <path d="M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3zm1 13h8V2H4z"/>
+              <path d="M9 9a1 1 0 1 0 2 0 1 1 0 0 0-2 0"/>
+            </svg>
+            <p>1اتاق</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    </section>
+      <div class="py-5 container">
+        <p class="fs-2">مجله ویلاچی</p>
+      </div>
+
+
+      <div class="container">
+
+        <div class="row gap-4 container justify-content-center pb-5">
+
+
+          <div class="card col-10 col-sm-6 col-lg-3 rounded-4 position-relative" style="width: 18rem; height: 27rem;">
+
+            <img src="./img/card3.jpg" class="card-img-top rounded-top-5 pt-2 h-50" alt="photo">
+            <div class="card-body text-center">
+              <h4 class="card-title fw-bold">عنوان متن ها</h4>
+              <p class="card-text text-secondary">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
+              
+            </div>
+          </div>
+  
+  
+  
+          <div class="card col-10 col-sm-6 col-lg-3 rounded-4 position-relative" style="width: 18rem; height: 27rem;">
+
+            <img src="./img/card3.jpg" class="card-img-top rounded-top-5 pt-2 h-50" alt="photo">
+            <div class="card-body text-center">
+              <h4 class="card-title fw-bold">عنوان متن ها</h4>
+              <p class="card-text text-secondary">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
+              
+            </div>
+          </div>
+  
+  
+  
+  
+          <div class="card col-10 col-sm-6 col-lg-3 rounded-4 position-relative" style="width: 18rem; height: 27rem;">
+
+            <img src="./img/card3.jpg" class="card-img-top rounded-top-5 pt-2 h-50" alt="photo">
+            <div class="card-body text-center">
+              <h4 class="card-title fw-bold">عنوان متن ها</h4>
+              <p class="card-text text-secondary">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
+              
+            </div>
+          </div>
+  
+  
+  
+          <div class="card col-10 col-sm-6 col-lg-3 rounded-4 position-relative" style="width: 18rem; height: 27rem;">
+
+            <img src="./img/card3.jpg" class="card-img-top rounded-top-5 pt-2 h-50" alt="photo">
+            <div class="card-body text-center">
+              <h4 class="card-title fw-bold">عنوان متن ها</h4>
+              <p class="card-text text-secondary">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
+              
+            </div>
+          </div>
+  
+      </div>
+      </div>
+  
+      <footer class="bg-dark bg-gradient">
+        <div class="row container text-center text-light py-5 ps-5">
+          <div class="col">
+            <a href="#"><img src="./img/logo.png" alt="logo"></a>
+            <p>قابل اعتماد برای تمام افرادی است که به ویلاچی سامانه ای ...</p>
+          </div>
+          <div class="col">
+            <ul class="list-unstyled">
+              <li>چگونه میزبان شویم؟</li>
+              <li>قوانین و مقررات</li>
+              <li>وبلاگ</li>
+              <li>سایت</li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="list-unstyled">
+              <li>درباره ویلاچی</li>
+              <li>تماس با ما</li>
+              <li>پیگیری خدمات</li>
+              <li>ویلاچی میزبان</li>
+            </ul>
+          </div>
+          <div class="col">
+            <div><p>ما را دنبال کنید</p></div>
+            <div>
+              <img src="./img/enamad.png" alt="enamad">
+              <img src="./img/enamad1.png" alt="enamad">
+            </div>
+          </div>
+        </div>
+        <div class="text-center p-4">
+          <a href="#" class="text-decoration-none text-light">کلیه حقوق این سایت متعلق به محمد جواد مهدوی پور میباشد</a>
+        </div>
+      </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
